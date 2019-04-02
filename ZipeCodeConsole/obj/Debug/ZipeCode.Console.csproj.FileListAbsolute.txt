@@ -1,0 +1,4 @@
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCode.Console\obj\Debug\ZipeCode.Console.csprojAssemblyReference.cache
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCode.Console\obj\Debug\ZipeCode.Console.csproj.CoreCompileInputs.cache
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCode.Console\obj\Debug\ConsoleCEP.exe
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCode.Console\obj\Debug\ConsoleCEP.pdb

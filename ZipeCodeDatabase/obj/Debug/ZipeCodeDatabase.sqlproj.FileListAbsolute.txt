@@ -1,0 +1,15 @@
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCodeDatabase\bin\Debug\ZipeCodeDatabase.dacpac
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCodeDatabase\bin\Debug\ConsoleCEP.Database.dll
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCodeDatabase\bin\Debug\ConsoleCEP.Database.pdb
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCodeDatabase\obj\Debug\Model.xml
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCodeDatabase\obj\Debug\refactor.xml
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCodeDatabase\obj\Debug\postdeploy.sql
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCodeDatabase\obj\Debug\predeploy.sql
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCodeDatabase\obj\Debug\ConsoleCEP.Database.dll
+C:\Users\pedro\Downloads\ZipeCode-Robot-master\ZipeCodeDatabase\obj\Debug\ConsoleCEP.Database.pdb
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeDatabase\bin\Debug\ZipeCodeDatabase.dacpac
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeDatabase\bin\Debug\ConsoleCEP.Database.dll
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeDatabase\bin\Debug\ConsoleCEP.Database.pdb
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeDatabase\obj\Debug\ZipeCodeDatabase.sqlprojAssemblyReference.cache
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeDatabase\obj\Debug\ConsoleCEP.Database.dll
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeDatabase\obj\Debug\ConsoleCEP.Database.pdb

@@ -1,0 +1,9 @@
+C:\Users\pedro.vasconcellos\documents\visual studio 2015\Projects\ConsoleCEP\ConsoleCEP\bin\Release\ConsoleCEP.exe.config
+C:\Users\pedro.vasconcellos\documents\visual studio 2015\Projects\ConsoleCEP\ConsoleCEP\bin\Release\ConsoleCEP.exe
+C:\Users\pedro.vasconcellos\documents\visual studio 2015\Projects\ConsoleCEP\ConsoleCEP\bin\Release\ConsoleCEP.pdb
+C:\Users\pedro.vasconcellos\documents\visual studio 2015\Projects\ConsoleCEP\ConsoleCEP\bin\Release\EntityFramework.dll
+C:\Users\pedro.vasconcellos\documents\visual studio 2015\Projects\ConsoleCEP\ConsoleCEP\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\pedro.vasconcellos\documents\visual studio 2015\Projects\ConsoleCEP\ConsoleCEP\bin\Release\EntityFramework.xml
+C:\Users\pedro.vasconcellos\documents\visual studio 2015\Projects\ConsoleCEP\ConsoleCEP\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\pedro.vasconcellos\documents\visual studio 2015\Projects\ConsoleCEP\ConsoleCEP\obj\Release\ConsoleCEP.exe
+C:\Users\pedro.vasconcellos\documents\visual studio 2015\Projects\ConsoleCEP\ConsoleCEP\obj\Release\ConsoleCEP.pdb
