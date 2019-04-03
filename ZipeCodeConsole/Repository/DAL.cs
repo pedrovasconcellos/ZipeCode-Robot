@@ -127,7 +127,7 @@ namespace ZipeCodeConsole.Repository
                 while (!ConectionIsOK()) { }
                 using (Context context = new Context())
                 {
-                    return Convert.ToInt32(context.Set<ZipeCode>().OrderByDescending(x => x.cep).FirstOrDefault().cep);
+                    return Convert.ToInt32(context.Set<ZipeCode>().OrderByDescending(x => x.cep).FirstOrDefault()?.cep);
                 }
             }
             catch (Exception ex)
