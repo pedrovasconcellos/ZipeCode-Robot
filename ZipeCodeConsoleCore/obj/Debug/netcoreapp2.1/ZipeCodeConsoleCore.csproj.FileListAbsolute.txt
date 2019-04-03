@@ -1,0 +1,11 @@
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\bin\Debug\netcoreapp2.1\ZipeCodeConsoleCore.deps.json
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\bin\Debug\netcoreapp2.1\ZipeCodeConsoleCore.runtimeconfig.json
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\bin\Debug\netcoreapp2.1\ZipeCodeConsoleCore.runtimeconfig.dev.json
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\bin\Debug\netcoreapp2.1\ZipeCodeConsoleCore.dll
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\bin\Debug\netcoreapp2.1\ZipeCodeConsoleCore.pdb
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\obj\Debug\netcoreapp2.1\ZipeCodeConsoleCore.csprojAssemblyReference.cache
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\obj\Debug\netcoreapp2.1\ZipeCodeConsoleCore.csproj.CoreCompileInputs.cache
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\obj\Debug\netcoreapp2.1\ZipeCodeConsoleCore.AssemblyInfoInputs.cache
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\obj\Debug\netcoreapp2.1\ZipeCodeConsoleCore.AssemblyInfo.cs
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\obj\Debug\netcoreapp2.1\ZipeCodeConsoleCore.dll
+C:\Vasconcellos\ZipeCode-Robot\ZipeCodeConsoleCore\obj\Debug\netcoreapp2.1\ZipeCodeConsoleCore.pdb

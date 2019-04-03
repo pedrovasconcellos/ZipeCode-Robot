@@ -29,7 +29,7 @@ namespace ZipeCodeConsole
 
         private static void Process()
         {
-            var lastZipeCodeInsert = (new DAL().LastZipeCodeInsert() ?? 0) + 1;
+            var lastZipeCodeInsert = dal.LastZipeCodeInsert() + 1;
             var zipeCodeMax = 99999999;
 
             Task taskSearchingPrintColor = PrintColor(
@@ -50,10 +50,15 @@ namespace ZipeCodeConsole
         {
             if (!(dal.ExistZipeCode<object>(new ZipeCode { cep = zipeCode })))
             {
-                ZipeCode objCep = CEPRequest.GetZipeCodeInfo(zipeCode);
+                ZipeCode objCep = null;
+                while (objCep == null)
+                {
+                    clockTime();
+                    objCep = ZipeCodeRequest.GetZipeCodeInfo(zipeCode);
+                    if (objCep == null) PrintColor($"Error on the server, performing a new request! ZipeCode = {zipeCode}", ConsoleColor.White).Wait();
+                }
                 objCep.datetime = DateTime.Now;
 
-                clockTime();
                 if (objCep.estado != null && objCep.cidade != null)
                 {
                     Task taskInsert = dal.Insert<object>(objCep);

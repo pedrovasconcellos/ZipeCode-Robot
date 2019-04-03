@@ -120,7 +120,7 @@ namespace ZipeCodeConsole.Repository
             }
         }
 
-        public int? LastZipeCodeInsert()
+        public int LastZipeCodeInsert()
         {
             try
             {

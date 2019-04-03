@@ -1,0 +1,94 @@
+﻿using ZipeCodeConsoleCore.Repository;
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+
+namespace ZipeCodeConsole
+{
+    class Program
+    {
+        private static DAL dal = new DAL();
+        private readonly static Object objectLocked = new Object();
+
+        static void Main(string[] args)
+        {
+            try
+            {
+                Task taskProcess = new Task(delegate { Process(); });
+                taskProcess.Start();
+                Console.ReadKey();
+            }
+            catch (Exception ex)
+            {
+                Task taskPrintColor = PrintColor(ex.Message, ConsoleColor.Red);
+                Console.ReadKey();
+            }
+        }
+
+        private static void Process()
+        {
+            var lastZipeCodeInsert = dal.LastZipeCodeInsert() + 1;
+            var zipeCodeMax = 99999999;
+
+            Task taskSearchingPrintColor = PrintColor(
+                String.Format("{0} || Searching from the ZipeCode = {1}", DateTime.Now, lastZipeCodeInsert), ConsoleColor.Yellow);
+
+            while (lastZipeCodeInsert <= zipeCodeMax)
+            {
+                Task taskZipeCodePrintColor = PrintColor((String.Concat("CEP: ", lastZipeCodeInsert.ToString(@"00000\-000"))), (ConsoleColor)new Random().Next(7, 14));
+                ProcessCep(lastZipeCodeInsert.ToString().PadLeft(8, '0'));
+                lastZipeCodeInsert++;
+            }
+
+            Task taskFinishedPrintColor = PrintColor("Finished Process.", ConsoleColor.Yellow);
+
+        }
+
+        private static void ProcessCep(string zipeCode)
+        {
+            if (!(dal.ExistZipeCode<object>(new ZipeCode { cep = zipeCode })))
+            {
+                ZipeCode objCep = null;
+                while (objCep == null)
+                {
+                    objCep = ZipeCodeRequest.GetZipeCodeInfo(zipeCode);
+                    if (objCep == null) PrintColor($"Error on the server, performing a new request! ZipeCode = {zipeCode}", ConsoleColor.White).Wait();
+                }
+                objCep.datetime = DateTime.Now;
+
+                if (objCep.estado != null && objCep.cidade != null)
+                {
+                    Task taskInsert = dal.Insert<object>(objCep);
+                    Task taskPrintObject = PrintObject(objCep);
+                }
+                else
+                {
+                    Task taskZipeCodeNotFoundPrintColor = PrintColor($"ZipeCode {Convert.ToInt32(zipeCode).ToString(@"00000\-000")} not found!", ConsoleColor.Yellow);
+                }
+            }
+
+        }
+
+        private static async Task PrintObject(object obj)
+        {
+            await Task.Run(() =>
+            {
+                string response = Newtonsoft.Json.JsonConvert.SerializeObject(obj);
+                Task printColor = PrintColor(response, ConsoleColor.Green);
+
+            });
+        }
+
+        private static async Task PrintColor(string text, ConsoleColor fontColor)
+        {
+            await Task.Run(() =>
+            {
+                lock (objectLocked)
+                {
+                    Console.ForegroundColor = fontColor;
+                    Console.WriteLine(String.Concat(text, Environment.NewLine));
+                }
+            });
+        }
+    }
+}

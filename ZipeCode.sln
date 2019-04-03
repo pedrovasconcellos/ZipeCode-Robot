@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ZipeCodeDatabase", "ZipeCod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipeCodeConsole", "ZipeCodeConsole\ZipeCodeConsole.csproj", "{795ED446-0D49-439E-BCA8-F68CC250C445}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZipeCodeConsoleCore", "ZipeCodeConsoleCore\ZipeCodeConsoleCore.csproj", "{921C8AFE-6071-48C1-9536-D9B7C45D3141}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{795ED446-0D49-439E-BCA8-F68CC250C445}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{795ED446-0D49-439E-BCA8-F68CC250C445}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{795ED446-0D49-439E-BCA8-F68CC250C445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{921C8AFE-6071-48C1-9536-D9B7C45D3141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921C8AFE-6071-48C1-9536-D9B7C45D3141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921C8AFE-6071-48C1-9536-D9B7C45D3141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921C8AFE-6071-48C1-9536-D9B7C45D3141}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
