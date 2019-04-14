@@ -18,6 +18,7 @@ namespace ZipeCodeConsole
         {
             try
             {
+                //http://viacep.com.br/ws/{0}/json
                 var accessToken = "Token token=09cadce3330c25fc7de26238042a9df9";
                 var url = "http://www.cepaberto.com/api/v2/ceps.json?cep={0}";
                 var client = new WebClient { Encoding = System.Text.Encoding.UTF8 };
